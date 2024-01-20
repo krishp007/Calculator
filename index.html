@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calc-container">
+        <div class="calc">
+            <input type="text" id="num-input" class="num-input">
+            <input type="text" class="result" disabled placeholder="Ans" id="result">
+            <div class="buttons">
+                <div class="row">
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">+</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">-</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">*</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">/</div>
+                </div>
+                <div class="row">
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">7</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">8</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">9</div>
+                </div>
+                <div class="row">
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">4</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">5</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">6</div>
+                </div>
+                <div class="row">
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">1</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">2</div>
+                    <div onclick="handleClick(this)" class="col col-3  cal-btn">3</div>
+                </div>
+                <div class="row">
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">0</div>
+                    <div onclick="handleClick(this)" class="col col-3 cal-btn">.</div>
+                    <div class="col col-3 cal-btn" id="ans">=</div>
+                    <div class="col col-3 cal-btn" id="clear" onclick="reset()">C</div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
